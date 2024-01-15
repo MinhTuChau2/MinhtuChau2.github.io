@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh Tu Chau - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            animation: fadeInDown 1s ease-out;
+        }
+
+         .enlarged-image {
+            max-width: 100%;
+            max-height: 100%;
+            cursor: pointer;
+        }
+
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        h1, p {
+            color: #fff;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-out;
+            transition: transform 0.3s ease-out;
+        }
+
+        .project:hover {
+            transform: scale(1.01);
+        }
+
+        .project .project-video:hover {
+            transform: scale(1.01);
+        }
+
+        .project .description {
+            color: #000;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .project .project-image {
+            max-width: 30%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        .project .project-image {
+            max-width: 30%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            width: 300px;
+            transition: transform 0.3s ease-out;
+        }
+
+        .project .project-image:hover {
+            transform: scale(1.1);
+        }
+
+        .project .project-video {
+            max-width: 21%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        section.contact h2, section.contact p {
+            color: #333;
+        }
+
+        section h2 + p {
+            color: #000; /* Black color for the brief introduction */
+        }
+
+        .about-me-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .project-image {
+        max-width: 100%;  /* Set the maximum width to 100% of its container */
+        height: auto;     /* Maintain the aspect ratio */
+        border-radius: 10px;
+        width: 100%;      /* Set the width to 100% for responsiveness */
+        transition: transform 0.3s ease-out;
+        }
+
+        .about-me-box p span {
+            display: inline-block;
+            transition: font-weight 0.3s ease-in-out;
+        }
+
+        .about-me-box p span:hover {
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease-out;
+        }
+
+        a:hover {
+            color: #0000ff;
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Minh Tu Chau</h1>
+    <p>Computer Engineer</p>
+</header>
+
+<section class="about-me-box">
+    <h2>About Me</h2>
+
+    <p>
+        <span>Hi,</span>
+        <span>I</span>
+        <span>am</span>
+        <span>Minh</span>
+        <span>Tu</span>
+        <span>Chau!</span>
+        <span>I</span>
+        <span>am</span>
+        <span>currently</span>
+        <span>pursuing</span>
+        <span>a</span>
+        <span>degree</span>
+        <span>in</span>
+        <span>computer</span>
+        <span>engineering</span>
+        <span>at</span>
+        <span>Concordia</span>
+        <span>University.</span>
+        <span>My</span>
+        <span>academic</span>
+        <span>journey</span>
+        <span>allowed</span>
+        <span>me</span>
+        <span>to</span>
+        <span>complete</span>
+        <span>various</span>
+        <span>projects</span>
+        <span>that</span>
+        <span>are</span>
+        <span>practical</span>
+        <span>and</span>
+        <span>theoretical.</span>
+        <span>I</span>
+        <span>am</span>
+        <span>proficient</span>
+        <span>in</span>
+        <span>programming</span>
+        <span>in</span>
+        <span>Java</span>
+        <span>and</span>
+        <span>C++</span>
+        <span>since</span>
+        <span>my</span>
+        <span>courses</span>
+        <span>were</span>
+        <span>mainly</span>
+        <span>based</span>
+        <span>on</span>
+        <span>these</span>
+        <span>languages.</span>
+        <span>I</span>
+        <span>have</span>
+        <span>a</span>
+        <span>strong</span>
+        <span>foundation</span>
+        <span>in</span>
+        <span>algorithm</span>
+        <span>development,</span>
+        <span>data</span>
+        <span>structure,</span>
+        <span>digital</span>
+        <span>systems,</span>
+        <span>and</span>
+        <span>web</span>
+        <span>design.</span>
+        <span>I</span>
+        <span>love</span>
+        <span>designing</span>
+        <span>solutions</span>
+        <span>for</span>
+        <span>problems</span>
+        <span>that</span>
+        <span>involve</span>
+        <span>all</span>
+        <span>sorts</span>
+        <span>of</span>
+        <span>coding</span>
+        <span>or</span>
+        <span>hardware.</span>
+        <span>Personally,</span>
+        <span>I</span>
+        <span>challenge</span>
+        <span>myself</span>
+        <span>to</span>
+        <span>learn</span>
+        <span>new</span>
+        <span>skills</span>
+        <span>and</span>
+        <span>infuse</span>
+        <span>them</span>
+        <span>with</span>
+        <span>my</span>
+        <span>creativity.</span>
+        <span>I</span>
+        <span>look</span>
+        <span>forward</span>
+        <span>to</span>
+        <span>keep</span>
+        <span>learning</span>
+        <span>and</span>
+        <span>creating.</span>
+        <br>
+        <span> <br>Relevant courses: Programming Methodology I-II,  Computer Organization and
+            Software, Operating System, Introduction to Discrete Mathematics, Data Structures
+            and Algorithms, Digital Systems</span>
+    </p>
+
+    <img src="P1100978.jpg" alt="About me image" class="project-image">
+</section>
+
+
+
+<section>
+    <h2>My Projects</h2>
+
+    <div class="project">
+        <h3>Project of integration in CEGEP</h3>
+        <p class="description">In this project, we built an alarm system that alerts the user that
+            someone entered a room. To accomplish this, research on lasers, photo-resistors, transistors, magnets and circuits needed to be done.</p>
+        <img src="IMG_1521.JPG" alt="Project 1 Image" class="project-image">
+        <img src="IMG_1520.JPG" alt="Project 1 Image" class="project-image">
+        <video controls class="project-video">
+            <source src="filtered-A21AB890-D376-4E0D-93A1-F022A44408D8.mp4" type="video/mp4">
+        </video>
+        <p class="description">Here is the simplified circuit in the box.
+            In fact, we added a switch composed of a magnet that activates the alarm system. In fact,
+            if the magnet is not placed properly, the circuit is cut and the alarm system doesn't work.</p>
+
+        <img src="magn.PNG" alt="Project 1 Image" class="project-image">
+
+    </div>
+
+    <div class="project">
+        <h3>Digital system project</h3>
+        <p class="description">In this project, the job demanded for this project was to build
+            a digital system from scratch. This digital system had to complete the task of
+            counting the amount of people in a room. Also, the room has a max occupancy of 63
+            people. When that limit is reached, the room emits a red light. The system needs
+            a synchronous reset system to reset the count of people to zero.
+        </p>
+
+        <iframe src="Project313.pdf" width="100%" height="600px"></iframe>
+
+    </div>
+
+    <div class="project">
+        <h3>Home Project 1</h3>
+        <p class="description">
+           This project is a straightforward Morse Code translator designed for the
+            Arduino UNO. It offers an enjoyable and uncomplicated project, well-suited
+            for those with just a single LED and an Arduino board.
+        </p>
+        <p>Code: <a href="https://github.com/MinhTuChau2/SimpleMorseCode/blob/main/.code_for_arduino" target="_blank">github.com/MorseCode</a></p>
+
+        <video controls class="project-video">
+            <source src="IMG_1413.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <div class="project">
+        <h3>Home Project 2</h3>
+        <p class="description">
+            This project offers a way to assess the operational
+            functionality of a photoresistor. By incorporating a buzzer, resistors,
+            and a photoresistor, you can observe how the sensor responds to
+            changes in light intensity.
+        </p>
+        <p>Code: <a href="https://github.com/MinhTuChau2/SimplePhotoresistorCircuit" target="_blank">github.com/Code</a></p>
+        <img src="arduinoyay.PNG" alt="Project 1 Image" class="project-image">
+        <video controls class="project-video">
+            <source src="a8bad190251c4fb59367c76eeb0a43b6.mp4" type="video/mp4">
+        </video>
+
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email: minhtuchau2@gmail.com</p>
+    <p>Phone: 514-690-5124</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/minh-tu-chau-8b851b255/" target="_blank">linkedin.com</a></p>
+    <p>GitHub: <a href="https://github.com/MinhTuChau2" target="_blank">github.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; Minh Tu Chau</p>
+</footer>
+
+<script>
+    // Smooth scroll effect
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+     document.addEventListener('DOMContentLoaded', function () {
+        // Get all project images
+        const projectImages = document.querySelectorAll('.project-image');
+
+        // Add click event listener to each image
+        projectImages.forEach(image => {
+            image.addEventListener('click', function () {
+                // Create an enlarged image element
+                const enlargedImage = document.createElement('img');
+                enlargedImage.src = this.src;
+                enlargedImage.alt = this.alt;
+                enlargedImage.classList.add('enlarged-image');
+
+                // Create a modal container
+                const modalContainer = document.createElement('div');
+                modalContainer.style.position = 'fixed';
+                modalContainer.style.top = '0';
+                modalContainer.style.left = '0';
+                modalContainer.style.width = '100%';
+                modalContainer.style.height = '100%';
+                modalContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+                modalContainer.style.display = 'flex';
+                modalContainer.style.alignItems = 'center';
+                modalContainer.style.justifyContent = 'center';
+
+                // Append the enlarged image to the modal container
+                modalContainer.appendChild(enlargedImage);
+
+                // Add click event listener to close the modal
+                modalContainer.addEventListener('click', function () {
+                    document.body.removeChild(modalContainer);
+                });
+
+                // Append the modal container to the body
+                document.body.appendChild(modalContainer);
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
